@@ -111,15 +111,6 @@ public class DialogueManager : MonoBehaviour
             dialogueText.text += letter;
             yield return null;
         }
-
-        /*
-
-        dialogueText[1].text = "";
-        foreach (char letter in sentence.ToCharArray())
-        {
-            dialogueText.text += letter;
-            yield return null;
-        }*/
     }
 
     void EndDialogue()
@@ -140,65 +131,8 @@ public class DialogueManager : MonoBehaviour
     } 
 }
     
-    /* private string GetLineAtIndex(int index) // To add?
-    {
-        string[] lines = File.ReadAllLines(filePath);
+ 
 
-        if (index < lines.Length)
-        {
-            return lines[index];
-        }
-        else
-        {
-            return "NO MORE LINES";
-        }
-    }*/
-
-
-                
-                /* void Start()
-{
-dialogueText.text = string.Empty;
-dialogueOpened = false;
-//   StartDialogue();
-}
-
-void Update()
-{
-playerCanvas.gameObject.SetActive(false);
-dialogueCanvas.gameObject.SetActive(true);
-
-
-}
-/*
-public void StartDialogue()
-{
-index = 0;
-StartCoroutine(TypeLine());
-}
-
-IEnumerator TypeLine()
-{
-foreach (char letters in lines[index].ToCharArray())
-{
-dialogueText.text += letters;
-yield return null; 
-}
-}
-
-public void NextLine()
-{
-if (index < lines.Length - 1)
-{
-index++;
-dialogueText.text = string.Empty;
-StartCoroutine(TypeLine());
-}
-else
-{
-gameObject.SetActive(false);
-}
-}*/
 
 
 
