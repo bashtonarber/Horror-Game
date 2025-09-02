@@ -9,8 +9,8 @@ public class PauseMenuEvents : MonoBehaviour
 /* 
 PAUSE MENU (INCLUDING SETTINGS MENU) - To work with the Unity UI Toolkit.
 
-This script was written as a way to play around with the UI Toolkit and to see how efficient it is to create a menu that is used frequently. 
-After having a play around with it, the flow of it proved to be really useful and feels just as good as the UI Canvas.
+This script was written as an exntension from the Main Menu events script that was used tt practice the UI Toolkit with.
+From this, I have been able to extended into using two Visual Elements within the same UXML from the Toolkit. 
 
 */
 
@@ -231,6 +231,7 @@ After having a play around with it, the flow of it proved to be really useful an
         _musicSource.Play();
     }
 }
+
 
 
 
