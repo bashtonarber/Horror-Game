@@ -3,7 +3,13 @@ using UnityEngine.UI;
 
 public class EquipmentScript : MonoBehaviour
 {
+/*
 
+An early script that was quickly written for an equipmment bar that the player will use. 
+
+Most of this has been for testing purposes and how it will look and feel. This still requires some changes though to be tidied up. 
+
+*/
     public Image middleItem;
     public Image middleItemBG;
     public Image rightItem;
@@ -68,3 +74,4 @@ public class EquipmentScript : MonoBehaviour
         leftItemSprite = Resources.Load<Sprite>("Torch");
     }
 }
+
