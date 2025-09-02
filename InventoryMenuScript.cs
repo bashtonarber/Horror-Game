@@ -16,7 +16,6 @@ public class InventoryMenuScript : MonoBehaviour
     private GameObject inventoryMenu;
     public GameObject inventoryInspector;
 
-    //Add in stuff about changing the button name to name the description, grab the related image and grabbing a note doc for the description. 
     [Header ("Images")]
     public Sprite OldKeySprite;
     public Image OldKeyImage;
@@ -346,3 +345,4 @@ public class InventoryMenuScript : MonoBehaviour
         }
     }*/
 }
+
