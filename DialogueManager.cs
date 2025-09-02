@@ -9,42 +9,46 @@ using UnityEngine.Rendering;
 /*DIALOGUE MANAGER!
 This script is a part of the Dialogue system that is being used in a Horror game that I am working on. - This was used previously in a University project, which I have now rewritten and tweaked to fit my horror game.
 
-
+This script is attached to the Dialogue Controller object that is within the game and is the core of pulling and displaying the dialogue to the player. 
 
 */
 
 public class DialogueManager : MonoBehaviour
 {
+    //Declaring the text that will display the characters name. 
     public TextMeshProUGUI[] nameText;
 
+    //Declaring the text where the dialogue will be shown. 
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI dialogueText2;
-    public Canvas dialogueCanvas;
-    public string[] lines;
+    public Canvas dialogueCanvas; //The Canvas that will be used for this - This has been changed to the dialogue appear in the standard PlayerCanvas. 
+    public string[] lines; //A string called lines that will store the dialogue. 
 
     private int index;
-    public float textSpeed;
+    public float textSpeed; //Float for the speed at which the text is typed out/ 
     
-    public Image[] nameBox;
+    public Image[] nameBox; //An image that will be the background of the character name.
 
     private string input;
 
-    public Queue<string> sentences;
+    public Queue<string> sentences; //Declaring the queue of the sentences for the dialogue. 
 
     public static bool dialogueOpened;
     public Button closeDialogueButton;
 
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new Queue<string>(); //Setting the queue of strings once the game scene is loaded. 
+
+        //Ensuring that the relevant dialogue text is being displayed.
         dialogueText.gameObject.SetActive(true);
         dialogueText2.gameObject.SetActive(false);
-        dialogueCanvas.gameObject.SetActive(false);
+        dialogueCanvas.gameObject.SetActive(false); //May be removing this line.
     }
 
     void Update()
     {
-
+        //Nothing here... For now!
     }
 
     #region IntroDialogue
@@ -132,6 +136,7 @@ public class DialogueManager : MonoBehaviour
 }
     
  
+
 
 
 
