@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class CharacterDisplayManagerScript : MonoBehaviour
 {
+
+/*
+
+This script was quickly written up to switch between each character display and mainly currently just used for testing purposes and will be updated at a later date.
+
+*/
+
       public GameObject[] characterDisplays;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+//Bools will be added here to go with each character, most likely as an array. 
+
+      
     void Start()
     {        
         characterDisplays[0].SetActive(false);
         characterDisplays[1].SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
@@ -38,3 +46,4 @@ public class CharacterDisplayManagerScript : MonoBehaviour
         }
     }
 }
+
