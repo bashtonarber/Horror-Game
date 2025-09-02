@@ -7,7 +7,7 @@ using System;
 using UnityEngine.Rendering;
 
 /*DIALOGUE MANAGER!
-This script is a part of the Dialogue system that is being used in a Horror game that I am working on. 
+This script is a part of the Dialogue system that is being used in a Horror game that I am working on. - This was used previously in a University project, which I have now rewritten and tweaked to fit my horror game.
 
 
 
@@ -132,6 +132,7 @@ public class DialogueManager : MonoBehaviour
 }
     
  
+
 
 
 
