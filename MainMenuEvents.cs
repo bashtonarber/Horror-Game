@@ -7,6 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuEvents : MonoBehaviour
 {
+
+/* 
+Main Menu - To work with the Unity UI Toolkit.
+
+This script was written as a way to play around with the UI Toolkit and to see how efficient it is to create a menu that is used frequently. 
+After having a play around with it, the flow of it proved to be really useful and feels just as good as the UI Canvas.
+
+*/
     private UIDocument _document;
 
     private Button _button;
@@ -51,3 +59,4 @@ public class MainMenuEvents : MonoBehaviour
         _audioSource.Play();
     }
 }
+
