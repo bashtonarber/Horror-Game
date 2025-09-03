@@ -51,6 +51,7 @@ public class DialogueManager : MonoBehaviour
         //Nothing here... For now!
     }
 
+    //Function that will start the dialogue and pull the names and string text from the DialogueScript. This script is called in the DialogueTrigger script to start the dialogue. 
     #region IntroDialogue
     public void StartDialogue(DialogueScript dialogue)
     {
@@ -65,12 +66,13 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
-        DisplayFirstSentence();
+        DisplayFirstSentence(); //This calls the function to trigger the first sentence of the dialogue string. 
         closeDialogueButton.gameObject.SetActive(false);
 
     }
     #endregion
 
+    //Function to display the first text in the string sentence. 
     public void DisplayFirstSentence()
     {
         string sentence = sentences.Dequeue();
@@ -79,7 +81,8 @@ public class DialogueManager : MonoBehaviour
         nameBox[0].gameObject.SetActive(true);
         nameBox[1].gameObject.SetActive(false);
     }
-
+    
+    //Fucntion to display the next sentence in the string - This is attached to a button so it keeps getting the next sentence when the button is pressed.
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
@@ -107,6 +110,7 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
+    //Coroutine function to type out the sentences out -  This is used instead of just having the text appear. 
     IEnumerator TypeSentence(string sentence)
     {
          dialogueText.text = "";
@@ -121,23 +125,19 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        print("DONE!!!!");
-        closeDialogueButton.gameObject.SetActive(true);
+        print("DONE!!!!"); //Some Debug to appear in the console for the dialogue has reached it's end. 
+        closeDialogueButton.gameObject.SetActive(true); //Setting the button to active so the dialogue box can be closed. 
     }
 
+    //Function to close the dialogue box. 
     public void CloseDialogueBox()
     {
         dialogueCanvas.gameObject.SetActive(false);
     }
-
-    public void ReadStringInput(string s)
-    {
-        input = s;
-        print(input);
-    } 
 }
     
  
+
 
 
 
