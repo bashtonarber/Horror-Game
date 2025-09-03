@@ -7,7 +7,7 @@ public class DynamicScrollView : MonoBehaviour
 
 /*
 
-This script wasfor a scroll view that I was playing around with for the Inventory Menu to make it more flexible to scroll.
+This script was for a scroll view that I was playing around with for the Inventory Menu to make it more flexible to scroll.
 This design was changed when I realised that the Horror game will be smaller and not have enough items for it. - This has been kept in just in case the design changes. 
 
 */
@@ -37,4 +37,5 @@ This design was changed when I realised that the Horror game will be smaller and
     }
 
 }
+
 
