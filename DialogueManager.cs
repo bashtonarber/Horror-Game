@@ -109,10 +109,12 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.text = "";
+         dialogueText.text = "";
+        dialogueText2.text = "";
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            dialogueText2.text += letter;
             yield return null;
         }
     }
@@ -136,6 +138,7 @@ public class DialogueManager : MonoBehaviour
 }
     
  
+
 
 
 
