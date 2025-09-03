@@ -13,9 +13,17 @@ using UnityEngine.EventSystems;
 
 public class InventoryMenuScript : MonoBehaviour
 {
+
+/*
+
+This script was the first one that I wrote up for the Inventory system before moving on to one that was more flexible and not relying as much on me adding in certain bits on the GameController in the Inspector.
+
+*/
+
     private GameObject inventoryMenu;
     public GameObject inventoryInspector;
 
+    //Declaring the Images and Sprites - A Header was used here to tidy up the Inspector a bit. 
     [Header ("Images")]
     public Sprite OldKeySprite;
     public Image OldKeyImage;
@@ -71,17 +79,6 @@ public class InventoryMenuScript : MonoBehaviour
         inventoryInspectorOpened = false;
         SetInventoryItems();
         SetInvetoryItemNames();
-        //      ReadTextAsset();
-        //      ApplyNameToObjects();
-        //filePath = Application.dataPath + "/TextFiles/" + "InventoryTextFiles" + "/OldKeyDescription.txt";
-        //    inventoryDescription.text = GetLineAtIndex(currentLineIndex + 2);
-        //    currentLineIndex = 0;
-        //    inventoryInspectName.text = GetLineAtIndex(currentLineIndex);
-        /*  foreach (string line in fileLines)
-          {
-              Instantiate(inventoryDescription, inventoryInspectMenu);
-              inventoryDescription.GetComponent<Text>().text = line;
-          }*/
 
         inventoryList = 1;
 
@@ -345,4 +342,5 @@ public class InventoryMenuScript : MonoBehaviour
         }
     }*/
 }
+
 
